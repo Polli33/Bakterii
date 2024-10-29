@@ -2,12 +2,12 @@ import random
 
 points = {
     'player': 0,
-    'computer': 0
+    'comp': 0
 }
 
 while True:
-    a = random.randint(9, 90)
-    b = random.randint(9, 90)
+    a = random.randint(8, 90)
+    b = random.randint(8, 90)
     op = random.choice(('+', '-'))
     if op == '+':
         ans = a + b
