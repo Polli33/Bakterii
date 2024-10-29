@@ -19,7 +19,7 @@ while True:
         points['player'] += 2
         print('Верно')
     else:
-        points['computer'] += 1
+        points['computer'] += 2
         print('Повезёт в следующий раз')
     print(f'Счёт {points['player']}:{points['computer']}')
 
