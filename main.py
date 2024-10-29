@@ -6,8 +6,8 @@ points = {
 }
 
 while True:
-    a = random.randint(10, 90)
-    b = random.randint(10, 90)
+    a = random.randint(9, 90)
+    b = random.randint(9, 90)
     op = random.choice(('+', '-'))
     if op == '+':
         ans = a + b
@@ -20,6 +20,6 @@ while True:
         print('Верно')
     else:
         points['computer'] += 1
-        print('Повезёт в следующий раз')
+        print('Удачи в следующий раз')
     print(f'Счёт {points['player']}:{points['computer']}')
 
