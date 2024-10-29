@@ -16,10 +16,10 @@ while True:
         ans = a - b
         user = input(f'{a} - {b} = ')
     if user == str(ans):
-        points['player'] += 1
+        points['player'] += 2
         print('Верно')
     else:
         points['computer'] += 1
-        print('Удачи в следующий раз')
+        print('Повезёт в следующий раз')
     print(f'Счёт {points['player']}:{points['computer']}')
 
