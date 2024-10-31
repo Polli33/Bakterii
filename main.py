@@ -9,20 +9,9 @@ words = ['валенок', 'горчица', 'овсянка', 'дом', 'кап
          'сон', 'камень', 'рюкзак', 'суперпупермега', 'гречка', 'речка', 'уста', 'ген', 'термобельё', 'термос', 'конь']
 
 
-def is_odd(number: int):
-    if number % 2 == 0:
-        return False
-    else:
-        return True
-
-
 while True:
-    a = random.randint(10, 110)
-    if is_odd(a):
-        continue
-    b = random.randint(10, 120)
-    if is_odd(b):
-        continue
+    a = random.choice(words)
+    b = random.choice(words)
     op = random.choice(('+', '-'))
     if op == '+':
         ans = a + b
