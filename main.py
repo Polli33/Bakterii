@@ -12,13 +12,8 @@ words = ['валенок', 'горчица', 'овсянка', 'дом', 'кап
 while True:
     a = random.choice(words)
     b = random.choice(words)
-    op = random.choice(('+', '-'))
-    if op == '+':
-        ans = a + b
-        user = input(f'{a} + {b} = ')
-    else:
-        ans = a - b
-        user = input(f'{a} - {b} = ')
+    ans = str(a) + str(b)
+    user = input(f'{a} + {b} = ')
     if user == str(ans):
         points['player'] += 2
         print('Верно')
